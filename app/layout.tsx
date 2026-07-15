@@ -28,7 +28,7 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Apex Anchor Cybersecurity | Managed Security, Aotearoa New Zealand",
+    default: "Apex Anchor Cybersecurity | Managed Security, Wellington, New Zealand",
     template: "%s | Apex Anchor Cybersecurity",
   },
   description:

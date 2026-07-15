@@ -7,7 +7,7 @@ import HeroImage from "@/components/HeroImage";
 
 export const metadata: Metadata = {
   title: "Careers",
-  description: "Join the Apex Anchor Cybersecurity team in Auckland, Wellington, or Christchurch.",
+  description: "Join the Apex Anchor Cybersecurity team in Wellington, New Zealand, and work on problems that matter with people who have your back at 2am.",
 };
 
 const benefits = [

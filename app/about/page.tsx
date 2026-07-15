@@ -7,7 +7,7 @@ import HeroImage from "@/components/HeroImage";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Apex Anchor Cybersecurity is a Kiwi-owned team of analysts, testers, and responders based in Aotearoa New Zealand.",
+  description: "Apex Anchor Cybersecurity is a Kiwi-owned team of analysts, testers, and responders based in Wellington, New Zealand.",
 };
 
 const values = [
@@ -29,10 +29,10 @@ const values = [
 ];
 
 const timeline = [
-  { year: "2016", detail: "Founded in Wellington by three analysts from the public and finance sectors." },
+  { year: "2016", detail: "Founded in New York by three analysts from the public and finance sectors." },
   { year: "2019", detail: "Opened a Wellington operations desk to support government and critical infrastructure clients." },
   { year: "2022", detail: "Built our 24/7 managed detection and response service in-house, end to end." },
-  { year: "2025", detail: "Extended coverage to Christchurch, supporting clients across all three main islands." },
+  { year: "2025", detail: "Extended coverage to London, supporting international clients." },
 ];
 
 export default function AboutPage() {
@@ -50,9 +50,7 @@ export default function AboutPage() {
             We started Apex Anchor because too many good businesses learn security the hard way.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#8093A8]">
-            We&apos;re a Kiwi-owned team of analysts, penetration testers, and incident responders working from
-            Auckland, Wellington, and Christchurch. No offshore call centre, no templated reports, just people who
-            answer the phone.
+            We&apos;re a Kiwi-owned team of analysts, penetration testers, and incident responders working from Wellington. 
           </p>
         </div>
       </section>
