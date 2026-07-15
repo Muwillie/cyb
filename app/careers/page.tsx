@@ -3,6 +3,7 @@ import Image from "next/image";
 import CoordinateTag from "@/components/CoordinateTag";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
+import HeroImage from "@/components/HeroImage";
 
 export const metadata: Metadata = {
   title: "Careers",
@@ -27,8 +28,12 @@ const roles = [
 export default function CareersPage() {
   return (
     <>
-      <section className="border-b border-[#2B3B52]">
-        <div className="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+      <section className="relative overflow-hidden border-b border-[#2B3B52]">
+        <HeroImage
+          src="/images/dep.webp"
+          alt="Apex Anchor staff collaborating in a bright office space, used as the Careers page hero background"
+        />
+        <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28">
           <CoordinateTag>Careers</CoordinateTag>
           <h1 className="mt-6 max-w-2xl font-[family-name:var(--font-archivo)] text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
             Work on problems that matter, with people who have your back at 2am.
@@ -44,7 +49,7 @@ export default function CareersPage() {
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="relative h-80 overflow-hidden rounded-[6px] border border-[#2B3B52] sm:h-96">
             <Image
-              src="/images/careers-team-culture.jpg"
+              src="/images/ss.jpeg"
               alt="Apex Anchor staff in an informal team discussion in a bright office space"
               fill
               className="object-cover"

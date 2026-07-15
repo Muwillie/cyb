@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import CoordinateTag from "@/components/CoordinateTag";
 import ContactForm from "@/components/ContactForm";
+import HeroImage from "@/components/HeroImage";
 
 
 export const metadata: Metadata = {
@@ -9,18 +10,23 @@ export const metadata: Metadata = {
 };
 
 const offices = [
-  { city: "Auckland", detail: "Level 8, 21 Customs Street, Auckland CBD 1010" },
+  { city: "New York", detail: `32-14 Exchange Pl
+New York, NY 10005, USA` },
   { city: "Wellington", detail: "Level 4, 40 Willis Street, Wellington 6011" },
-  { city: "Christchurch", detail: "Level 2, 152 Hereford Street, Christchurch 8011" },
+  { city: "London", detail: "69 Old Broad St, London EC2M 1QS, United Kingdom" },
 ];
 
 export default function ContactPage() {
   return (
     <>
-      <section className="border-b border-[#2B3B52]">
-        <div className="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+       <section className="relative overflow-hidden border-b border-[#2B3B52]">
+        <HeroImage
+          src="/images/rec.jpg"
+          alt="Office reception area with soft evening light, used as the Contact page hero background"
+        />
+        <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28">
           <CoordinateTag>Get In Touch</CoordinateTag>
-          <h1 className="mt-6 max-w-2xl font-[family-name:var(--font-archivo)] text-4xl font-bold leading-tight tracking-tight text-[#0A121D] sm:text-5xl">
+          <h1 className="mt-6 max-w-2xl font-[family-name:var(--font-archivo)] text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
             Tell us what&apos;s on your mind. We&apos;ll tell you what we can do about it.
           </h1>
         </div>
@@ -51,7 +57,7 @@ export default function ContactPage() {
           <ContactForm />
 
           <div>
-            <h2 className="font-[family-name:var(--font-archivo)] text-lg font-bold text-[#0A121D]">Our offices</h2>
+            <h2 className="font-[family-name:var(--font-archivo)] text-lg font-bold text-white">Our offices</h2>
             <div className="mt-6 flex flex-col divide-y divide-[#2B3B52] border-t border-[#2B3B52]">
               {offices.map((office) => (
                 <div key={office.city} className="py-5">
@@ -63,7 +69,7 @@ export default function ContactPage() {
               ))}
             </div>
             <div className="mt-8">
-              <h3 className="font-[family-name:var(--font-archivo)] text-sm font-bold text-[#0A121D]">
+              <h3 className="font-[family-name:var(--font-archivo)] text-sm font-bold text-white">
                 General enquiries
               </h3>
               <a href="mailto:hello@apexanchor.co.nz" className="mt-2 block text-sm text-[#5FB8B0] hover:text-[#8fd4cd]">

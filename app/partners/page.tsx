@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import CoordinateTag from "@/components/CoordinateTag";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
+import HeroImage from "@/components/HeroImage";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Partners",
@@ -30,14 +32,41 @@ const tiers = [
 ];
 
 const techPartners = [
-  "CrowdStrike", "Microsoft Defender", "Okta", "Cloudflare", "Wiz", "Splunk",
+  {
+    name: "CrowdStrike",
+    logo: "/images/crowdstrike.jpg",
+  },
+  {
+    name: "Microsoft Defender",
+    logo: "/images/def.png",
+  },
+  {
+    name: "Okta",
+    logo: "/images/okta.png",
+  },
+  {
+    name: "Cloudflare",
+    logo: "/images/cloudflare.png",
+  },
+  {
+    name: "Wiz",
+    logo: "/images/wiz.png",
+  },
+  {
+    name: "Splunk",
+    logo: "/images/splunk.png",
+  },
 ];
 
 export default function PartnersPage() {
   return (
     <>
-      <section className="border-b border-[#2B3B52]">
-        <div className="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+       <section className="relative overflow-hidden border-b border-[#2B3B52]">
+        <HeroImage
+          src="/images/pa.jpeg"
+          alt="Two people shaking hands in a modern office setting, used as the Partners page hero background"
+        />
+        <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28">
           <CoordinateTag>Partners</CoordinateTag>
           <h1 className="mt-6 max-w-2xl font-[family-name:var(--font-archivo)] text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
             We defend better ground when we defend it together.
@@ -78,19 +107,21 @@ export default function PartnersPage() {
         <div className="mx-auto max-w-7xl px-6 py-20">
           <SectionHeading tag="Technology Stack" title="Platforms we integrate with" tone="sounding" />
           <div className="mt-12 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-6">
-            {techPartners.map((name) => (
-              <div
-                key={name}
-                className="flex h-20 items-center justify-center rounded-[6px] border border-[#2B3B52] bg-[#0A121D] px-4 text-center text-sm font-medium text-[#8093A8]"
-              >
-                {name}
-              </div>
-            ))}
-          </div>
-          <p className="mt-6 text-xs text-[#5A6B80]">
-            Logos shown as text placeholders — replace with official partner marks per each vendor&apos;s brand
-            guidelines.
-          </p>
+  {techPartners.map((partner) => (
+    <div
+      key={partner.name}
+      className="flex h-20 items-center justify-center rounded-[6px] border border-[#2B3B52] bg-[#0A121D] p-4"
+    >
+      <Image
+        src={partner.logo}
+        alt={partner.name}
+        width={120}
+        height={40}
+        className="h-10 w-auto object-contain"
+      />
+    </div>
+  ))}
+</div>
         </div>
       </section>
 

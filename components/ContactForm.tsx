@@ -74,13 +74,13 @@ export default function ContactForm() {
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div className="flex flex-col gap-2">
-          <label htmlFor="name" className="text-sm font-medium text-[#0A121D]">
+          <label htmlFor="name" className="text-sm font-medium text-white">
             Full name
           </label>
           <input id="name" name="name" type="text" required className={inputClasses} />
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="organisation" className="text-sm font-medium text-[#0A121D]">
+          <label htmlFor="organisation" className="text-sm font-medium text-white">
             Organisation
           </label>
           <input id="organisation" name="organisation" type="text" required className={inputClasses} />
@@ -88,20 +88,20 @@ export default function ContactForm() {
       </div>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div className="flex flex-col gap-2">
-          <label htmlFor="email" className="text-sm font-medium text-[#0A121D]">
+          <label htmlFor="email" className="text-sm font-medium text-white">
             Work email
           </label>
           <input id="email" name="email" type="email" required className={inputClasses} />
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="phone" className="text-sm font-medium text-[#0A121D]">
+          <label htmlFor="phone" className="text-sm font-medium text-white">
             Phone
           </label>
           <input id="phone" name="phone" type="tel" className={inputClasses} />
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        <label htmlFor="topic" className="text-sm font-medium text-[#0A121D]">
+        <label htmlFor="topic" className="text-sm font-medium text-white">
           What do you need help with?
         </label>
         <select id="topic" name="topic" className={inputClasses} defaultValue="">
@@ -116,7 +116,7 @@ export default function ContactForm() {
         </select>
       </div>
       <div className="flex flex-col gap-2">
-        <label htmlFor="message" className="text-sm font-medium text-[#0A121D]">
+        <label htmlFor="message" className="text-sm font-medium text-white">
           Message
         </label>
         <textarea id="message" name="message" rows={5} required className={inputClasses} />

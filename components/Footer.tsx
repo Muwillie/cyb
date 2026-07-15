@@ -52,12 +52,9 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#8093A8]">
-              Managed cybersecurity, penetration testing, and incident response for organisations across Aotearoa
+              Managed cybersecurity, penetration testing, and incident response for organisations across
               New Zealand.
             </p>
-            <div className="mt-6">
-              <CoordinateTag tone="sounding">36.8485° S, 174.7633° E — Tāmaki Makaurau</CoordinateTag>
-            </div>
           </div>
 
           {columns.map((column) => (

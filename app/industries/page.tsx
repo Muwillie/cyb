@@ -3,6 +3,7 @@ import Image from "next/image";
 import CoordinateTag from "@/components/CoordinateTag";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
+import HeroImage from "@/components/HeroImage";
 
 export const metadata: Metadata = {
   title: "Industries",
@@ -76,8 +77,12 @@ const industries = [
 export default function IndustriesPage() {
   return (
     <>
-      <section className="border-b border-[#2B3B52]">
-        <div className="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+      <section className="relative overflow-hidden border-b border-[#2B3B52]">
+        <HeroImage
+          src="/images/well.jpg"
+          alt="Aerial view of a New Zealand city skyline representing the range of industries served, used as the Industries page hero background"
+        />
+        <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28">
           <CoordinateTag>Industries</CoordinateTag>
           <h1 className="mt-6 max-w-2xl font-[family-name:var(--font-archivo)] text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
             Different terrain, the same standard of coverage.
@@ -124,7 +129,7 @@ export default function IndustriesPage() {
             />
             <div className="relative h-72 overflow-hidden rounded-[6px] border border-[#2B3B52] sm:h-80">
               <Image
-                src="/images/industries-overview.jpg"
+                src="/images/over.avif"
                 alt="Wide shot of a New Zealand cityscape representing the range of industries served, to be replaced with a relevant photograph"
                 fill
                 className="object-cover"

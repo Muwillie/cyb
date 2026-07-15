@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import CoordinateTag from "@/components/CoordinateTag";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
+import HeroImage from "@/components/HeroImage";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -82,8 +83,12 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="border-b border-[#2B3B52]">
-        <div className="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+      <section className="relative overflow-hidden border-b border-[#2B3B52]">
+        <HeroImage
+          src="/images/hero-services.jpg"
+          alt="Close-up of security analysts reviewing monitoring dashboards, used as the Services page hero background"
+        />
+        <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-28">
           <CoordinateTag>Capability Set</CoordinateTag>
           <h1 className="mt-6 max-w-2xl font-[family-name:var(--font-archivo)] text-4xl font-bold leading-tight tracking-tight text-[#0b0ea8] sm:text-5xl">
             Six services. One accountable team.
@@ -110,7 +115,7 @@ export default function ServicesPage() {
               </div>
               <ul className="flex flex-col gap-3">
                 {service.points.map((point) => (
-                  <li key={point} className="flex items-start gap-3 text-sm text-[#24292e]">
+                  <li key={point} className="flex items-start gap-3 text-sm text-[#b6cadf]">
                     <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[#E8A33D]" aria-hidden="true" />
                     {point}
                   </li>

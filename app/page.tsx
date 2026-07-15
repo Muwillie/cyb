@@ -3,6 +3,7 @@ import CoordinateTag from "@/components/CoordinateTag";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
 import ContourField from "@/components/ContourField";
+import HeroImage from "@/components/HeroImage";
 
 const services = [
   {
@@ -88,10 +89,14 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-[#2B3B52]">
+        <HeroImage
+          src="/images/hero-home.jpg"
+          alt="Wide shot of an Apex Anchor security operations centre at night, screens glowing, used as the homepage hero background"
+        />
         <ContourField />
         <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-20 sm:pt-28">
           <CoordinateTag>Threat Watch — Aotearoa New Zealand</CoordinateTag>
-          <h1 className="mt-6 max-w-3xl font-[family-name:var(--font-archivo)] text-4xl font-bold leading-[1.05] tracking-tight text-[#0b0ea8] sm:text-6xl">
+          <h1 className="mt-6 max-w-3xl font-[family-name:var(--font-archivo)] text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">
             Security that holds its position when everything else moves.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#8093A8]">
