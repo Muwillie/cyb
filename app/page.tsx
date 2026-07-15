@@ -95,7 +95,7 @@ export default function HomePage() {
         />
         <ContourField />
         <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-20 sm:pt-28">
-          <CoordinateTag>Threat Watch — Aotearoa New Zealand</CoordinateTag>
+          <CoordinateTag>Threat Watch — New Zealand</CoordinateTag>
           <h1 className="mt-6 max-w-3xl font-[family-name:var(--font-archivo)] text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">
             Security that holds its position when everything else moves.
           </h1>
