@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const offices = [
   { city: "New York", detail: `32-14 Exchange Pl
 New York, NY 10005, USA` },
-  { city: "Wellington", detail: "Level 4, 40 Willis Street, Wellington 6011" },
+  { city: "Wellington", detail: "Level 4, 40 Willis Street, Wellington 6011, New Zealand" },
   { city: "London", detail: "69 Old Broad St, London EC2M 1QS, United Kingdom" },
 ];
 
