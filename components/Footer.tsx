@@ -26,8 +26,8 @@ const columns = [
     title: "Get in touch",
     links: [
       { href: "/contact", label: "Contact us" },
-      { href: "tel:+64800000000", label: "+64 800 000 000" },
-      { href: "mailto:hello@apexanchor.co.nz", label: "hello@apexanchor.co.nz" },
+      { href: "tel:+17069825110", label: "+1 (706) 982-5110" },
+      { href: "mailto:apexanchor@outlook.com", label: "apexanchor@outlook.com" },
     ],
   },
 ];

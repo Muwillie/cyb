@@ -23,8 +23,8 @@ export default function Navbar() {
         <div className="mx-auto flex max-w-7xl items-center justify-center px-6 py-2 text-center sm:justify-end">
           <p className="font-[family-name:var(--font-plex-mono)] text-[11px] uppercase tracking-[0.15em] text-[#8093A8]">
             24/7 Incident Response —{" "}
-            <a href="tel:+64800000000" className="text-[#E8A33D] hover:text-[#f0b660]">
-              +64 800 000 000
+            <a href="tel:+17069825110" className="text-[#E8A33D] hover:text-[#f0b660]">
+              +1 (706) 982-5110
             </a>
           </p>
         </div>

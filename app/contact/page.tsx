@@ -10,8 +10,7 @@ export const metadata: Metadata = {
 };
 
 const offices = [
-  { city: "New York", detail: `32-14 Exchange Pl
-New York, NY 10005, USA` },
+  { city: "Atlanta", detail: `699 Spring St NW, Atlanta, GA 30308, USA` },
   { city: "Wellington", detail: "Level 4, 40 Willis Street, Wellington 6011, New Zealand" },
   { city: "London", detail: "69 Old Broad St, London EC2M 1QS, United Kingdom" },
 ];
@@ -43,10 +42,10 @@ export default function ContactPage() {
               <p className="mt-1 text-[#C4CEDB]">Don&apos;t wait for a form response. Call our response line now.</p>
             </div>
             <a
-              href="tel:+64800000000"
+              href="tel:+17069825110"
               className="whitespace-nowrap rounded-[4px] bg-[#E8A33D] px-6 py-3 text-sm font-semibold text-[#0A121D] hover:bg-[#f0b660]"
             >
-              +64 800 000 000
+              +1 (706) 982-5110
             </a>
           </div>
         </div>
@@ -72,8 +71,8 @@ export default function ContactPage() {
               <h3 className="font-[family-name:var(--font-archivo)] text-sm font-bold text-white">
                 General enquiries
               </h3>
-              <a href="mailto:hello@apexanchor.co.nz" className="mt-2 block text-sm text-[#5FB8B0] hover:text-[#8fd4cd]">
-                hello@apexanchor.co.nz
+              <a href="mailto:apexanchor@outlook.com" className="mt-2 block text-sm text-[#5FB8B0] hover:text-[#8fd4cd]">
+                apexanchor@outlook.com
               </a>
             </div>
           </div>
